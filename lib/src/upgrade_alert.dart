@@ -17,6 +17,8 @@ class UpgradeAlert extends UpgradeBase {
   /// Describes the part of the user interface represented by this widget.
   @override
   Widget build(BuildContext context, UpgradeBaseState state) {
+    if (!upgrader.enable) return child ?? Container();
+
     if (upgrader.debugLogging) {
       print('upgrader: build UpgradeAlert');
     }

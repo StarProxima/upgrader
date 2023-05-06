@@ -161,7 +161,10 @@ class Upgrader {
   final notInitializedExceptionMessage =
       'initialize() not called. Must be called first.';
 
+  bool enable;
+
   Upgrader({
+    this.enable = true,
     this.appcastConfig,
     this.appcast,
     UpgraderMessages? messages,
@@ -210,6 +213,8 @@ class Upgrader {
   /// Initialize [Upgrader] by getting saved preferences, getting platform package info, and getting
   /// released version info.
   Future<bool> initialize() async {
+    if (!enable) return false;
+
     if (debugLogging) {
       print('upgrader: initialize called');
     }
