@@ -191,7 +191,7 @@ class Upgrader {
   })  : client = client ?? http.Client(),
         messages = messages ?? UpgraderMessages(),
         platform = platform ?? defaultTargetPlatform {
-    if (debugLogging) print("upgrader: instantiated.");
+    if (debugLogging && enable) print("upgrader: instantiated.");
   }
 
   /// A shared instance of [Upgrader].
