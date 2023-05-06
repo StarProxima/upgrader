@@ -747,6 +747,9 @@ class UpgraderMessages {
       case 'te':
         message = 'విడుదల గమనికలు';
         break;
+      case 'ru':
+        message = 'Что нового';
+        break;
 
       case 'bn':
       case 'el':
@@ -762,7 +765,7 @@ class UpgraderMessages {
       case 'nb':
       case 'nl':
       case 'pl':
-      case 'ru':
+
       case 'sv':
       case 'ta':
       case 'tr':
