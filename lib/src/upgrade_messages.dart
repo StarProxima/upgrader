@@ -211,7 +211,7 @@ class UpgraderMessages {
         break;
       case 'ru':
         message =
-            '{{appName}} {{currentAppStoreVersion}} доступно для скачавания. Текущая версия - {{currentInstalledVersion}}.';
+            'Дайте ему возможность стать лучше!\n\n{{appName}} {{currentAppStoreVersion}} доступно для скачивания. Текущая версия - {{currentInstalledVersion}}.';
         break;
       case 'sv':
         message =
@@ -674,7 +674,7 @@ class UpgraderMessages {
         message = 'Czy chciałbyś zaktualizować teraz?';
         break;
       case 'ru':
-        message = 'Дайте ему возможность стать лучше!';
+        message = 'Хотите обновить сейчас?';
         break;
       case 'sv':
         message = 'Vill du uppdatera nu?';
